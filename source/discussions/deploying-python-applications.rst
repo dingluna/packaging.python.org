@@ -1,4 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รีเซ็ตรหัสผ่าน</title>
+</head>
+<body>
+    <form action="/reset_password" method="post">
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">ขอรีเซ็ตรหัสผ่าน</buthttp://127.0.0.1:5000/reset_passwordton>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตั้งรหัสผ่านใหม่</title>
+</head>
+<body>
+    <form action="/reset_password/{{ token }}" method="post">
+        <label for="password">รหัสผ่านใหม่:</label>
+        <input type="password" id="password" name="password" required placeholder="ป้อนรหัสผ่านใหม่">
+        <button type="submit">รีเซ็ตรหัสผ่าน</button>
+    </form>
+</body>
+</html>
 =============================
 Deploying Python applications
 =============================
